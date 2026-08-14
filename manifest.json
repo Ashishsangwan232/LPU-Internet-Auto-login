@@ -2,9 +2,8 @@
   "manifest_version": 3,
   "name": "LPU Auto Login",
   "version": "1.1",
+  "description": "Automatically fills and submits the login form on LPU internet portal using credentials saved locally in your browser.",
   "permissions": [
-    "scripting",
-    "activeTab",
     "storage"
   ],
   "host_permissions": [
