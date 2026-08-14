@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — LPU Auto Login</title>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    max-width: 560px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #222;
+    line-height: 1.55;
+  }
+  h1 { font-size: 20px; margin-bottom: 4px; }
+  .updated { color: #777; font-size: 13px; margin-bottom: 24px; }
+  h2 { font-size: 15px; margin-top: 28px; color: #1d4ed8; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .badge {
+    display: inline-block;
+    background: #ecfdf5;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy — LPU Auto Login</h1>
+  <div class="updated">Last updated: August 14, 2026</div>
+
+  <div class="badge">🔒 This extension does not collect, transmit, or share any data. Everything stays on your device.</div>
+
+  <h2>What the extension does</h2>
+  <p>This extension automatically fills in and submits the login form on <strong>internet.lpu.in</strong> (LPU's internet/Wi-Fi authentication portal) using a username and password that you provide.</p>
+
+  <h2>What data is stored, and where</h2>
+  <ul>
+    <li>The only data handled is the username and password you type into the popup.</li>
+    <li>It is saved using the browser's built-in <code>chrome.storage.local</code> API.</li>
+    <li>It is stored <strong>locally on your device only</strong>, inside your browser profile.</li>
+    <li>It is never sent to a remote server, database, analytics service, or third party.</li>
+    <li>It is never synced to the cloud (the extension does not use <code>chrome.storage.sync</code>).</li>
+  </ul>
+
+  <h2>What the extension does NOT do</h2>
+  <ul>
+    <li>No network requests, APIs, or servers of its own.</li>
+    <li>No analytics, telemetry, or crash-reporting.</li>
+    <li>No reading or logging of browsing history or activity on other sites.</li>
+    <li>No sharing of data with the developer or anyone else.</li>
+  </ul>
+
+  <h2>Permissions explained</h2>
+  <ul>
+    <li><strong>storage</strong> — saves your username/password locally so you don't re-enter them each time.</li>
+    <li><strong>activeTab / scripting</strong> — fills in and submits the login form on the LPU portal page.</li>
+    <li><strong>host_permissions (internet.lpu.in)</strong> — the content script only runs on this domain, nowhere else.</li>
+  </ul>
+
+  <h2>Removing your data</h2>
+  <p>Click "Clear saved credentials" in the extension popup at any time, or uninstall the extension to remove all locally stored data.</p>
+</body>
+</html>
